@@ -1,9 +1,6 @@
 import Parallax from "@/src/main/parallax/Parallax";
 import ParallaxIntro from "@/src/main/parallax/ParallaxIntro";
-import Projects from "@/src/main/projects/Projects";
-import Slide from "@/src/main/projects/Slide";
-import SlideTest from "@/src/main/projects/SlideTest";
-import SkillTest from "@/src/main/skills/subComponents/test/SkillTest";
+import SkillSwiperTest from "@/src/main/skills/SkilSwiperTest";
 
 export default function Home() {
   return (
@@ -11,10 +8,7 @@ export default function Home() {
       <ParallaxIntro></ParallaxIntro>
       <Parallax></Parallax>
       {/* <Skills></Skills> */}
-      <SkillTest></SkillTest>
-      {/* <Projects></Projects>
-      <Slide></Slide> */}
-      <SlideTest></SlideTest>
+      <SkillSwiperTest></SkillSwiperTest>
     </>
   );
 }

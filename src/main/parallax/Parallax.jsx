@@ -1,8 +1,8 @@
 "use client";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import Projects from "../projects/Projects";
 import Principles from "../principles/Principles";
+import Projects from "../projects/Projects";
 
 const Parallax = () => {
   const ref = useRef(null);

@@ -1,6 +1,11 @@
 "use client";
-import ProjectCard from "./subComponents/ProjectCard";
+import React, { useRef, useState } from "react";
 import { motion } from "motion/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import "./../projects/styles.css";
+import { EffectCards } from "swiper/modules";
 
 const Projects = () => {
   const containerVariant = {
@@ -16,51 +21,35 @@ const Projects = () => {
     hidden: { y: 50 },
     visible: { y: 0, transition: { duration: 0.5 } },
   };
-
   return (
     <motion.section
       variants={containerVariant}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
-      className="h-screen w-full bg-transparent overflow-hidden px-10 gap-20 flex justify-center items-center"
+      className="w-full h-screen bg-blue-300 px-10 py-15 overflow-hidden relative flex flex-col justify-center items-center"
     >
       <motion.div
-        className="flex flex-col justify-center items-center"
         variants={childVariant}
+        className="w-full max-w-5xl mx-auto flex flex-col items-center gap-10"
       >
         <h1 className="text-6xl font-bold text-white">PROJECTS</h1>
-        <motion.div className="w-full h-[600px] relative flex flex-col justify-center items-center">
-          <ProjectCard bg={"bg-white"} z={"z-1"}></ProjectCard>
-          <ProjectCard
-            bg={"bg-amber-100"}
-            rotate={"rotate-3"}
-            z={"z-2"}
-            deviceSupport={"Web / MOBILE DEVELOPMENT"}
-            projectName={"NHIS"}
-          ></ProjectCard>
-          <ProjectCard
-            bg={"bg-amber-200"}
-            rotate={"rotate-6"}
-            z={"z-3"}
-            deviceSupport={"Web / MOBILE DEVELOPMENT"}
-            projectName={"NHIS"}
-          ></ProjectCard>
-          <ProjectCard
-            bg={"bg-amber-300"}
-            rotate={"rotate-9"}
-            z={"z-4"}
-            deviceSupport={"Web / MOBILE DEVELOPMENT"}
-            projectName={"NHIS"}
-          ></ProjectCard>
-          <ProjectCard
-            bg={"bg-amber-400"}
-            rotate={"rotate-12"}
-            z={"z-5"}
-            deviceSupport={"Web / MOBILE DEVELOPMENT"}
-            projectName={"NHIS"}
-          ></ProjectCard>
-        </motion.div>
+        <Swiper
+          effect={"cards"}
+          grabCursor={true}
+          modules={[EffectCards]}
+          className="mySwiper !w-full !h-[600px]"
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide>Slide 7</SwiperSlide>
+          <SwiperSlide>Slide 8</SwiperSlide>
+          <SwiperSlide>Slide 9</SwiperSlide>
+        </Swiper>
       </motion.div>
     </motion.section>
   );
