@@ -1,0 +1,42 @@
+"use client";
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
+import Introduce from "../introduce/Introduce";
+import LicenseEducation from "../introduce/LicenseEducation";
+
+const ParallaxIntro = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  // Projects 올라오면서 보이기
+  const projectsY = useTransform(scrollYProgress, [0.2, 0.4], [100, 0]);
+  const projectsOpacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
+
+  // Principles 서서히 사라지기
+  const principlesOpacity = useTransform(scrollYProgress, [0.2, 0.4], [1, 0]);
+  return (
+    <section className="h-[200vh] w-full bg-transparent">
+      <motion.div
+        style={{ opacity: principlesOpacity }}
+        className="sticky top-0 h-screen"
+      >
+        <Introduce></Introduce>
+      </motion.div>
+      <motion.div
+        style={{ y: projectsY }}
+        viewport={{ once: true, amount: 0.5 }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="sticky top-0 w-full h-screen z-10"
+      >
+        <LicenseEducation></LicenseEducation>
+      </motion.div>
+    </section>
+  );
+};
+
+export default ParallaxIntro;
