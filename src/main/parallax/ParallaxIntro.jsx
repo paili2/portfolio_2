@@ -11,22 +11,26 @@ const ParallaxIntro = () => {
     offset: ["start start", "end start"],
   });
 
-  // Projects 올라오면서 보이기
-  const projectsY = useTransform(scrollYProgress, [0.2, 0.4], [100, 0]);
-  const projectsOpacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
+  // licenseEducation 올라오면서 보이기
+  const licenseEducationY = useTransform(scrollYProgress, [0.5, 1.0], [100, 0]);
+  const licenseEducationOpacity = useTransform(
+    scrollYProgress,
+    [0.5, 1.0],
+    [0, 1]
+  );
 
-  // Principles 서서히 사라지기
-  const principlesOpacity = useTransform(scrollYProgress, [0.2, 0.4], [1, 0]);
+  // introduce 서서히 사라지기
+  const introduceOpacity = useTransform(scrollYProgress, [0.0, 0.5], [1, 0]);
   return (
-    <section className="h-[200vh] w-full bg-transparent">
+    <section className="h-[200vh] w-full">
       <motion.div
-        style={{ opacity: principlesOpacity }}
+        style={{ opacity: introduceOpacity }}
         className="sticky top-0 h-screen"
       >
         <Introduce></Introduce>
       </motion.div>
       <motion.div
-        style={{ y: projectsY }}
+        style={{ y: licenseEducationY }}
         viewport={{ once: true, amount: 0.5 }}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

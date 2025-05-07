@@ -29,9 +29,7 @@ const Projects = () => {
         className="flex flex-col justify-center items-center"
         variants={childVariant}
       >
-        <motion.h1 className="text-6xl font-bold text-white">
-          PROJECTS
-        </motion.h1>
+        <h1 className="text-6xl font-bold text-white">PROJECTS</h1>
         <motion.div className="w-full h-[600px] relative flex flex-col justify-center items-center">
           <ProjectCard bg={"bg-white"} z={"z-1"}></ProjectCard>
           <ProjectCard

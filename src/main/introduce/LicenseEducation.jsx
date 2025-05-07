@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const LicenseEducation = () => {
   return (
-    <div className="bg-blue-400">
+    <section className="h-screen bg-blue-500 px-10 py-6 overflow-hidden relative flex flex-col justify-center items-center">
       <div className="w-full h-full max-w-5xl mx-auto border-none rounded-2xl bg-blue-200 flex flex-col gap-10 p-10">
         <div className="flex items-center gap-5">
-          <div className="w-[100px] h-[100px] border-none rounded-[999px] relative">
+          <div className="w-[80px] h-[80px] border-none rounded-[999px] relative">
             <Image
               src="/profile.jpg"
               alt=""
@@ -21,7 +21,7 @@ const LicenseEducation = () => {
             <span className="font-bold ">Full Stack Developer</span>
           </div>
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-7">
           <div className="flex flex-col justify-center border-none rounded-4xl bg-white p-5 gap-3">
             <span>교육</span>
             <strong>을지대학교 스포츠아웃도어학과 졸업 2020.02</strong>
@@ -48,9 +48,8 @@ const LicenseEducation = () => {
             <strong>MOS PowerPoint Microsoft 2019.11</strong>
           </div>
         </div>
-        <div></div>
       </div>
-    </div>
+    </section>
   );
 };
 
