@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "./../projects/styles.css";
 import { EffectCards } from "swiper/modules";
+import ProjectCard from "./subComponents/ProjectCard";
 
 const Projects = () => {
   const containerVariant = {
@@ -31,7 +32,7 @@ const Projects = () => {
     >
       <motion.div
         variants={childVariant}
-        className="w-full max-w-5xl mx-auto flex flex-col items-center gap-10"
+        className="w-full max-w-5xl mx-auto flex flex-col items-center gap-5"
       >
         <h1 className="text-6xl font-bold text-white">PROJECTS</h1>
         <Swiper
@@ -40,7 +41,13 @@ const Projects = () => {
           modules={[EffectCards]}
           className="mySwiper !w-full !h-[600px]"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>
+            <ProjectCard
+              image={"/nhis.png"}
+              deviceSupport={"Web / MOBILE DEVELOPMENT"}
+              projectName={"NHIS"}
+            ></ProjectCard>
+          </SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
