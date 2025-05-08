@@ -1,4 +1,5 @@
 "use client";
+
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import Principles from "../principles/Principles";
@@ -11,12 +12,13 @@ const Parallax = () => {
     offset: ["start start", "end start"],
   });
 
-  // Projects 올라오면서 보이기
-  const projectsY = useTransform(scrollYProgress, [0.6, 0.8], [100, 0]);
-  const projectsOpacity = useTransform(scrollYProgress, [0.6, 0.8], [0, 1]);
-
   // Principles 서서히 사라지기
-  const principlesOpacity = useTransform(scrollYProgress, [0.4, 0.5], [1, 0]);
+  const principlesOpacity = useTransform(scrollYProgress, [0.5, 0.7], [1, 0]);
+
+  // Projects 올라오면서 보이기
+  const projectsY = useTransform(scrollYProgress, [0.3, 0.4], [100, 0]);
+  const projectsOpacity = useTransform(scrollYProgress, [0.3, 0.4], [0, 1]);
+
   return (
     <section className="h-[200vh] w-full bg-blue-400">
       <motion.div
