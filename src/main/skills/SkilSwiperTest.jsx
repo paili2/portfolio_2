@@ -15,74 +15,176 @@ import "./skillSwiperTest.css";
 
 // import required modules
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
+import SkillCardTest from "./subComponents/test/SkillCardTest";
 
 const SkillSwiperTest = () => {
   return (
     <section className="w-full bg-blue-400 overflow-hidden flex flex-col gap-20 py-30 px-25 justify-center items-center">
-      <h1 className="text-6xl font-bold text-white">SKILLS</h1>
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
+        <h1 className="text-6xl font-bold text-white">SKILLS</h1>
 
-      <Swiper
-        effect={"flip"}
-        grabCursor={true}
-        pagination={true}
-        navigation={true}
-        modules={[EffectFlip, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-      </Swiper>
-
-      <div className="w-full grid grid-cols-3 gap-10 ">
-        <SkillSwiperTest
-          image={"/html.png"}
-          skilName={"HTML"}
-        ></SkillSwiperTest>
-        <SkillSwiperTest image={"/css.png"} skilName={"CSS"}></SkillSwiperTest>
-        <SkillSwiperTest
-          image={"/javascript.png"}
-          skilName={"JAVASCRIPT"}
-        ></SkillSwiperTest>
-        <SkillSwiperTest
-          image={"/typescript.png"}
-          skilName={"TYPESCRIPT"}
-          // width={"w-[100px]"}
-          // height={"h-[100px]"}
-        ></SkillSwiperTest>
-        <SkillSwiperTest
-          image={"/react.png"}
-          skilName={"REACT"}
-        ></SkillSwiperTest>
-        <SkillSwiperTest
-          image={"/nextjs.png"}
-          skilName={"NEXT.JS"}
-        ></SkillSwiperTest>
-        <SkillSwiperTest
-          image={"/java.png"}
-          skilName={"JAVA"}
-          // width={"w-[130px]"}
-          // height={"h-[130px]"}
-        ></SkillSwiperTest>
-        <SkillSwiperTest
-          image={"/springboot.png"}
-          skilName={"SPRINGBOOT"}
-        ></SkillSwiperTest>
+        <div className="w-full grid grid-cols-3 gap-5 ">
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/html.png"}
+                skilName={"HTML"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                웹 문서의 구조를 설계하고 시맨틱 태그를 활용해 접근성과 SEO를
+                고려한 마크업 작성
+              </p>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/css.png"}
+                skilName={"CSS"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                "반응형 디자인과 유틸리티 클래스(Tailwind CSS 등)를 활용해
+                사용자 친화적인 UI 스타일 구현
+              </p>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/javascript.png"}
+                skilName={"JAVASCRIPT"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                동적 기능과 이벤트 기반 로직을 구현하여 사용자 경험을 향상시키는
+                클라이언트 로직 개발
+              </p>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/typescript.png"}
+                skilName={"TYPESCRIPT"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                TypeScript로 타입 안전성을 강화하고, 코드의 안정성을 높여 협업
+                효율 개선
+              </p>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/react.png"}
+                skilName={"REACT"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                React를 사용 컴포넌트 기반 UI를 개발, 상태 관리, 라우팅을 통해
+                효율적인 웹 구축
+              </p>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/nextjs.png"}
+                skilName={"NEXT.JS"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                SSR(서버 사이드 렌더링)과 SSG(정적 사이트 생성)를 활용해
+                최적화된 React 기반 웹 애플리케이션 구축
+              </p>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/java.png"}
+                skilName={"JAVA"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                객체지향 프로그래밍 원칙에 기반해 안정적인 백엔드 로직을
+                개발하고, 다양한 API와 시스템 연동 구현
+              </p>
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <SkillCardTest
+                image={"/springboot.png"}
+                skilName={"SPRINGBOOT"}
+              ></SkillCardTest>
+            </SwiperSlide>
+            <SwiperSlide className="p-10">
+              <p>
+                Spring Boot 기반의 RESTful API 서버를 구축하고, 보안 및 예외
+                처리를 적용해 안정적인 서비스 환경 개발
+              </p>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </section>
   );

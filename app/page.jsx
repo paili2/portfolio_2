@@ -5,9 +5,8 @@ import SkillSwiperTest from "@/src/main/skills/SkilSwiperTest";
 export default function Home() {
   return (
     <>
-      <ParallaxIntro></ParallaxIntro>
-      <Parallax></Parallax>
-      {/* <Skills></Skills> */}
+      {/* <ParallaxIntro></ParallaxIntro>
+      <Parallax></Parallax> */}
       <SkillSwiperTest></SkillSwiperTest>
     </>
   );
