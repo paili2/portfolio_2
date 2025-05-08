@@ -7,8 +7,8 @@ const Introduce = () => {
   return (
     <section className="h-screen bg-blue-400 px-10 pt-15 overflow-hidden relative flex flex-col justify-center items-center">
       <motion.h1
-        initial={{ opacity: 0, x: -500, y: 500 }}
-        animate={{ opacity: 1, x: 0, y: 0, transition: { duration: 0.3 } }}
+        initial={{ y: 500 }}
+        animate={{ y: 0, transition: { duration: 0.3 } }}
         style={{ textShadow: "-12px 0px 0px rgba(64, 64, 64, 0.7)" }}
         className="text-white font-bold text-[200px] leading-none absolute top-25 right-35 z-2 text-shadow-amber-300"
       >

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const LicenseEducation = () => {
   return (
-    <section className="h-screen bg-blue-500 px-10 py-6 overflow-hidden relative flex flex-col justify-center items-center">
+    <section className="h-screen bg-transparent px-10 py-6 overflow-hidden relative flex flex-col justify-center items-center">
       <div className="w-full max-w-5xl mx-auto border-none rounded-2xl bg-blue-200 flex flex-col gap-10 p-10">
         <div className="flex items-center gap-5">
           <div className="w-[80px] h-[80px] border-none rounded-[999px] relative">

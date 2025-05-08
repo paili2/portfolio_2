@@ -65,7 +65,7 @@ body {
 }
 
 .swiper-slide:nth-child(3n) {
-  width: 1000px !important;
+  width: 700px !important;
   height: 600px;
   background-color: rgb(10, 184, 111);
 }

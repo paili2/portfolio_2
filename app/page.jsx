@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <ParallaxIntro></ParallaxIntro>
       <Parallax></Parallax>
-      {/* <SkillSwiper></SkillSwiper> */}
+      <SkillSwiper></SkillSwiper>
     </>
   );
 }

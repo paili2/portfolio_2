@@ -29,12 +29,12 @@ const SkillSwiper = () => {
             pagination={true}
             loop={true}
             modules={[EffectFlip, Pagination, Navigation]}
-            className="mySwiper"
+            className="mySwiper !w-[500px]"
           >
             <SwiperSlide>
               <SkillCard image={"/html.png"} skilName={"HTML"}></SkillCard>
             </SwiperSlide>
-            <SwiperSlide className="p-10 !bg-blue-500 !bg-blue-500">
+            <SwiperSlide className="p-10 !bg-blue-500">
               <p>
                 웹 문서의 구조를 설계하고 시맨틱 태그를 활용해 접근성과 SEO를
                 고려한 마크업 작성
