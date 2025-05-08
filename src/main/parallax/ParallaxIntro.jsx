@@ -11,16 +11,17 @@ const ParallaxIntro = () => {
     offset: ["start start", "end start"],
   });
 
+  // introduce 서서히 사라지기
+  const introduceOpacity = useTransform(scrollYProgress, [0.5, 0.7], [1, 0]);
+
   // licenseEducation 올라오면서 보이기
-  const licenseEducationY = useTransform(scrollYProgress, [0.5, 1.0], [100, 0]);
+  const licenseEducationY = useTransform(scrollYProgress, [0.3, 0.4], [100, 0]);
   const licenseEducationOpacity = useTransform(
     scrollYProgress,
-    [0.5, 1.0],
+    [0.3, 0.4],
     [0, 1]
   );
 
-  // introduce 서서히 사라지기
-  const introduceOpacity = useTransform(scrollYProgress, [0.0, 0.5], [1, 0]);
   return (
     <section className="h-[200vh] w-full">
       <motion.div
