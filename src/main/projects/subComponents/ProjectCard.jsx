@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiHtmx } from "react-icons/si";
 
-const ProjectCard = ({ image, deviceSupport, projectName }) => {
+const ProjectCard = ({ image, deviceSupport, projectName, projectLink }) => {
   return (
     <div
       className={`w-full h-full border-none rounded-4xl absolute flex flex-col items-start py-20 px-10 gap-20`}
@@ -37,7 +37,7 @@ const ProjectCard = ({ image, deviceSupport, projectName }) => {
             </Link>
             <Link
               className="w-fit flex justify-center items-center gap-2 border-none rounded-sm bg-white p-2 font-bold text-lg text-black"
-              href="https://paili2.github.io/NHIS-Clone/"
+              href={projectLink}
             >
               사이트 보기
               <SiHtmx className="text-xl" />

@@ -45,17 +45,32 @@ const Projects = () => {
             <ProjectCard
               image={"/nhis.png"}
               deviceSupport={"Web / MOBILE DEVELOPMENT"}
-              projectName={"NHIS"}
+              projectName={"TicketLink"}
+              projectLink={"https://paili2.github.io/ticketLink-clone/"}
             ></ProjectCard>
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          <SwiperSlide>
+            <ProjectCard
+              image={"/nhis.png"}
+              deviceSupport={"Web / MOBILE DEVELOPMENT"}
+              projectName={"MUSINSA"}
+              projectLink={"https://paili2.github.io/musinsa-clone/"}
+            ></ProjectCard>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProjectCard
+              image={"/nhis.png"}
+              deviceSupport={"Web / MOBILE DEVELOPMENT"}
+              projectName={"NHIS"}
+              projectLink={"https://paili2.github.io/NHIS-Clone/"}
+            ></ProjectCard>
+          </SwiperSlide>
+          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
+          {/* <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide> */}
         </Swiper>
       </motion.div>
     </motion.section>
