@@ -18,8 +18,8 @@ import SkillCard from "./subComponents/SkillCard";
 
 const SkillSwiper = () => {
   return (
-    <section className="w-full bg-blue-400 overflow-hidden flex flex-col gap-20 py-30 px-25 justify-center items-center">
-      <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
+    <section className="w-full bg-blue-400 overflow-hidden py-30 px-25 justify-center items-center">
+      <div className="w-full mx-auto flex flex-col items-center gap-20">
         <h1 className="text-6xl font-bold text-white">SKILLS</h1>
 
         <div

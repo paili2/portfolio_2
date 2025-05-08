@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,7 +16,8 @@ import { EffectFlip, Pagination, Navigation } from "swiper/modules";
 
 const Skill = () => {
   return (
-    <><section className="w-full bg-blue-400 overflow-hidden flex flex-col gap-20 py-30 px-25 justify-center items-center"></section>
+    <>
+      <section className="w-full bg-blue-400 overflow-hidden flex flex-col gap-20 py-30 px-25 justify-center items-center"></section>
       <Swiper
         effect={"flip"}
         grabCursor={true}
