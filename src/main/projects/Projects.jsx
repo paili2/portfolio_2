@@ -45,16 +45,20 @@ const Projects = () => {
             <ProjectCard
               image={"/nhis.png"}
               deviceSupport={"Web / MOBILE DEVELOPMENT"}
-              projectName={"TicketLink"}
-              projectLink={"https://paili2.github.io/ticketLink-clone/"}
+              projectName={"MUSINSA"}
+              projectLink={"https://paili2.github.io/musinsa-clone/"}
+              used1={"HTML"}
+              used2={"CSS"}
+              used3={"React"}
+              used4={"Next.js"}
             ></ProjectCard>
           </SwiperSlide>
           <SwiperSlide className="project-slide">
             <ProjectCard
               image={"/nhis.png"}
               deviceSupport={"Web / MOBILE DEVELOPMENT"}
-              projectName={"MUSINSA"}
-              projectLink={"https://paili2.github.io/musinsa-clone/"}
+              projectName={"TicketLink"}
+              projectLink={"https://paili2.github.io/ticketLink-clone/"}
             ></ProjectCard>
           </SwiperSlide>
           <SwiperSlide className="project-slide">
