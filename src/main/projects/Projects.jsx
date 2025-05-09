@@ -28,7 +28,7 @@ const Projects = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
-      className="w-full h-screen bg-blue-700 px-10 pb-10 overflow-hidden relative flex flex-col justify-center items-center project-section"
+      className="w-full h-screen bg-transparent px-10 pb-10 overflow-hidden relative flex flex-col justify-center items-center project-section"
     >
       <motion.div
         variants={childVariant}

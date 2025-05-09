@@ -26,7 +26,7 @@ const ParallaxIntro = () => {
     <section className="h-[200vh] w-full bg-blue-400">
       <motion.div
         style={{ opacity: introduceOpacity }}
-        className="sticky top-0 h-screen border"
+        className="sticky top-0 h-screen"
       >
         <Introduce></Introduce>
       </motion.div>

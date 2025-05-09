@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "./skillSwiper.css";
 
 // import required modules
@@ -22,10 +21,7 @@ const SkillSwiper = () => {
       <div className="w-full mx-auto flex flex-col items-center gap-20">
         <h1 className="text-6xl font-bold text-white">SKILLS</h1>
 
-        <div
-          className="w-full grid grid-cols-3 gap-y-5 place-items-center"
-          style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
-        >
+        <div className="w-full grid grid-cols-4 place-items-center">
           <Swiper
             effect={"flip"}
             grabCursor={true}
@@ -57,8 +53,8 @@ const SkillSwiper = () => {
 
             <SwiperSlide className="p-10">
               <p>
-                "반응형 디자인과 유틸리티 클래스(Tailwind CSS 등)를 활용해
-                사용자 친화적인 UI 스타일 구현
+                반응형 디자인과 유틸리티 클래스(Tailwind CSS 등)를 활용해 사용자
+                친화적인 UI 스타일 구현
               </p>
             </SwiperSlide>
           </Swiper>

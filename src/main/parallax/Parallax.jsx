@@ -13,7 +13,7 @@ const Parallax = () => {
   });
 
   // Principles 서서히 사라지기
-  const principlesOpacity = useTransform(scrollYProgress, [0.6, 0.7], [1, 0]);
+  const principlesOpacity = useTransform(scrollYProgress, [0.4, 0.5], [1, 0]);
 
   // Projects 올라오면서 보이기
   const projectsY = useTransform(scrollYProgress, [0.3, 0.4], [100, 0]);
