@@ -4,8 +4,8 @@ import { motion } from "motion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import "./../projects/styles.css";
 import { EffectCards } from "swiper/modules";
+import "./../projects/projects.css";
 import ProjectCard from "./subComponents/ProjectCard";
 
 const Projects = () => {
@@ -28,7 +28,7 @@ const Projects = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
-      className="w-full h-screen bg-blue-700 px-10 pb-10 overflow-hidden relative flex flex-col justify-center items-center"
+      className="w-full h-screen bg-blue-700 px-10 pb-10 overflow-hidden relative flex flex-col justify-center items-center project-section"
     >
       <motion.div
         variants={childVariant}
@@ -39,9 +39,9 @@ const Projects = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper !w-full !h-[600px]"
+          className="mySwiper project-swiper"
         >
-          <SwiperSlide>
+          <SwiperSlide className="project-slide">
             <ProjectCard
               image={"/nhis.png"}
               deviceSupport={"Web / MOBILE DEVELOPMENT"}
@@ -49,7 +49,7 @@ const Projects = () => {
               projectLink={"https://paili2.github.io/ticketLink-clone/"}
             ></ProjectCard>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="project-slide">
             <ProjectCard
               image={"/nhis.png"}
               deviceSupport={"Web / MOBILE DEVELOPMENT"}
@@ -57,7 +57,7 @@ const Projects = () => {
               projectLink={"https://paili2.github.io/musinsa-clone/"}
             ></ProjectCard>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="project-slide">
             <ProjectCard
               image={"/nhis.png"}
               deviceSupport={"Web / MOBILE DEVELOPMENT"}
@@ -65,12 +65,14 @@ const Projects = () => {
               projectLink={"https://paili2.github.io/NHIS-Clone/"}
             ></ProjectCard>
           </SwiperSlide>
-          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide className="project-slide">
+            추후 추가 예정입니다.
+          </SwiperSlide>
           {/* <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
-          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
-          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
-          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide>
-          <SwiperSlide>추후 추가 예정입니다.</SwiperSlide> */}
+          <SwiperSlide className="project-slide">추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide className="project-slide">추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide className="project-slide">추후 추가 예정입니다.</SwiperSlide>
+          <SwiperSlide className="project-slide">추후 추가 예정입니다.</SwiperSlide> */}
         </Swiper>
       </motion.div>
     </motion.section>

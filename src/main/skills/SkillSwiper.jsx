@@ -18,7 +18,7 @@ import SkillCard from "./subComponents/SkillCard";
 
 const SkillSwiper = () => {
   return (
-    <section className="w-full bg-blue-400 overflow-hidden py-30 px-25 justify-center items-center">
+    <section className="w-full bg-blue-400 overflow-hidden py-30 px-25 justify-center items-center skill-section">
       <div className="w-full mx-auto flex flex-col items-center gap-20">
         <h1 className="text-6xl font-bold text-white">SKILLS</h1>
 
@@ -37,7 +37,7 @@ const SkillSwiper = () => {
               <SkillCard image={"/html.png"} skilName={"HTML"}></SkillCard>
             </SwiperSlide>
 
-            <SwiperSlide className="p-10 !bg-blue-500">
+            <SwiperSlide className="p-10">
               <p>
                 웹 문서의 구조를 설계하고 시맨틱 태그를 활용해 접근성과 SEO를
                 고려한 마크업 작성
@@ -55,7 +55,7 @@ const SkillSwiper = () => {
               <SkillCard image={"/css.png"} skilName={"CSS"}></SkillCard>
             </SwiperSlide>
 
-            <SwiperSlide className="p-10 !bg-blue-500">
+            <SwiperSlide className="p-10">
               <p>
                 "반응형 디자인과 유틸리티 클래스(Tailwind CSS 등)를 활용해
                 사용자 친화적인 UI 스타일 구현
