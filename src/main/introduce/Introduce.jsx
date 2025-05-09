@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Introduce = () => {
   return (
-    <section className="h-screen bg-blue-400 px-10 pt-15 overflow-hidden relative flex flex-col justify-center items-center">
+    <section className="h-screen bg-black px-10 pt-15 overflow-hidden relative flex flex-col justify-center items-center">
       <motion.h1
         initial={{ y: 500 }}
         animate={{ y: 0, transition: { duration: 0.3 } }}

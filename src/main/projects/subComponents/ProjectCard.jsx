@@ -14,19 +14,24 @@ const ProjectCard = ({
   used4,
   used5,
   used6,
+  codeLink,
   projectLink,
-  description1,
-  description2,
-  description3,
+  outline,
+  implementation1,
+  implementation2,
+  plan1,
+  plan2,
+  learn1,
+  learn2,
 }) => {
   return (
     <div
-      className={`w-full h-full border-none rounded-4xl absolute flex flex-col items-start py-20 px-10 gap-15`}
+      className={`w-full h-full border-none rounded-4xl absolute flex flex-col items-start py-15 px-10 gap-15`}
     >
       <div className="w-full h-1/2 flex gap-10 items-center">
         <div className="relative w-[450px] h-[270px] overflow-hidden border-none rounded-2xl">
           <Image
-            className="object-cover border-none rounded-2xl"
+            className="object-cover border-none rounded-2xl object-top"
             src={image}
             alt=""
             fill
@@ -46,7 +51,7 @@ const ProjectCard = ({
           <div className="flex gap-3">
             <Link
               className="w-fit flex justify-center items-center gap-2 border-none rounded-sm bg-white p-2 font-bold text-sm text-black"
-              href="https://paili2.github.io/NHIS-Clone/"
+              href={codeLink}
             >
               코드 보기
               <SiHtmx className="text-xl" />
@@ -68,7 +73,15 @@ const ProjectCard = ({
           </div>
         </div>
       </div>
-      <ProjectDescription></ProjectDescription>
+      <ProjectDescription
+        outline={outline}
+        implementation1={implementation1}
+        implementation2={implementation2}
+        plan1={plan1}
+        plan2={plan2}
+        learn1={learn1}
+        learn2={learn2}
+      ></ProjectDescription>
     </div>
   );
 };
