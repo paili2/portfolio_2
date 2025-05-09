@@ -23,7 +23,7 @@ const SkillSwiper = () => {
         <h1 className="text-6xl font-bold text-white">SKILLS</h1>
 
         <div
-          className="w-full grid grid-cols-3 gap-5"
+          className="w-full grid grid-cols-3 gap-y-5 place-items-center"
           style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
         >
           <Swiper
